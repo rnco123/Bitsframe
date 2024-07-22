@@ -23,33 +23,32 @@ const TilteInjector = () => {
     return `${toCapitalize(activeRecord.name)}`;
   }, [activeRecord]);
 
-  const desc = useMemo(() => {
-    return activeRecord && activeRecord.description && activeRecord.description.length > 0
-      ? activeRecord.description
-      : 'Discover Himalaya UI, an exceptional open-source UI library for Next.js, offering a wide range of powerful features and seamless integration possibilities.';
-  }, [activeRecord]);
-
   const capitalizeTitleGenerated = capitalizeTitle ? `${capitalizeTitle} — Bitsframe` : `Bitsframe — A Saas for Cutting Edge Web Development`;
 
-  const domain = process.env.SITE_URL || 'https://himalaya-ui.com';
-  const fullPath = `${domain}${pathName}`;
   return (
     <>
       <title>{capitalizeTitleGenerated}</title>
-      <meta name="description" content={desc} />
-      <meta name="title" content={capitalizeTitleGenerated} />
+      <meta
+        name="description"
+        content="Discover Bitsframe, an exceptional start up for cutting edge web development, offering a wide range of powerful features and seamless integration possibilities."
+      />
+      <meta name="title" content={'Bitsframe — A Saas for Cutting Edge Web Development'} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={fullPath} />
-      <meta property="og:title" content={capitalizeTitleGenerated} />
-      <meta property="og:description" content={desc} />
-      <meta property="og:image" content="/images/himalaya-banner-dark.png" />
+      <meta property="og:url" content={'https://bitsframe.com'} />
+      <meta property="og:title" content={'Bitsframe — A Saas for Cutting Edge Web Development'} />
+      <meta
+        property="og:description"
+        content="Discover Bitsframe, an exceptional start up for cutting edge web development, offering a wide range of powerful features and seamless integration possibilities."
+      />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={fullPath} />
-      <meta property="twitter:title" content={capitalizeTitleGenerated} />
-      <meta property="twitter:description" content={desc} />
-      <meta property="twitter:image" content="/images/himalaya-banner-dark.png" />
+      <meta property="twitter:url" content={'https://bitsframe.com'} />
+      <meta property="twitter:title" content={'Bitsframe — A Saas for Cutting Edge Web Development'} />
+      <meta
+        property="twitter:description"
+        content="Discover Bitsframe, an exceptional start up for cutting edge web development, offering a wide range of powerful features and seamless integration possibilities."
+      />
     </>
   );
 };

@@ -18,7 +18,7 @@ export default function Services() {
       >
         <div className="header">
           <Hero.Tag background={`var(--color-primary-1000)`} textColor={`var(--color-primary-contrast)`}>
-            UI library
+            Techcellence
           </Hero.Tag>
           <Text m={0} mt={'12px'} h4 font={'clamp(24px, 3.1vw, 48px)'} style={{ fontWeight: '700', lineHeight: '1.2' }}>
             Scaling Excellence: UI Components Beyond Limits
@@ -29,35 +29,18 @@ export default function Services() {
         </div>
         <Grid.Container gap={2} justify="center">
           <Grid xs={24} md={6}>
-            <HomeCell icon={<PackageIcon />} url="/components" title="100+ React components" desc="Over 100 React components, endless possibilities." />
+            <HomeCell icon={<PackageIcon />} title="Custom Solutions" desc="Tailored services to meet your unique needs." />
           </Grid>
           <Grid xs={24} md={6}>
-            <HomeCell
-              icon={<FeatherIcon />}
-              url="/guide/themes"
-              title="Fully and easy customizable"
-              desc="Your design, your way – our UI library is fully customizable."
-            />
+            <HomeCell icon={<FeatherIcon />} title="Advanced Tech" desc="Cutting-edge technology for innovative and effective solutions." />
           </Grid>
           <Grid xs={24} md={6}>
-            <HomeCell
-              icon={<GitHubIcon />}
-              url="https://github.com/red-ninjas/himalaya-ui/"
-              title="Maintained & open sourced"
-              desc="Embrace innovation with our fully open-source UI library."
-            />
+            <HomeCell icon={<GitHubIcon />} title="Flexible Management" desc="Adaptive project management for timely and efficient results." />
           </Grid>
           <Grid xs={24} md={6}>
-            <HomeCell icon={<Activity />} url="/" title="Performance optimized" desc="Powerful UI, peak performance – experience excellence with our library" />
+            <HomeCell icon={<Activity />} title="Expert Team" desc=" Skilled professionals with deep industry knowledge and expertise" />
           </Grid>
         </Grid.Container>
-
-        <div className="action-button">
-          <Button type="secondary" auto scale={1.3}>
-            Read documentation
-          </Button>
-        </div>
-
         <style jsx>{`
           .action-button {
             display: flex;

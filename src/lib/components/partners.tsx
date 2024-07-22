@@ -15,7 +15,7 @@ export default function Partners() {
     >
       <div className="carousel">
         <Text mb={1.2} small style={{ color: 'var(--color-background-500)', textTransform: 'uppercase' }}>
-          With heavy support from
+          Tech-Driven Partnerships
         </Text>
         <PageWidth>
           <Carousel
@@ -47,16 +47,19 @@ export default function Partners() {
               },
             }}
           >
-            <Carousel.Item>
-              <a href="https://striked.gg" rel="noreferrer" target="_blank" className="partner">
-                <Striked></Striked>
-              </a>
-            </Carousel.Item>
-            <Carousel.Item>
-              <a href="https://redninjas.dev" rel="noreferrer" target="_blank" className="partner">
-                <RedNinjas></RedNinjas>
-              </a>
-            </Carousel.Item>
+            <Carousel.Item>Eden</Carousel.Item>
+            <Carousel.Item>Turok Makto</Carousel.Item>
+            <Carousel.Item>UCBC</Carousel.Item>
+            <Carousel.Item>MCM</Carousel.Item>
+            <Carousel.Item>Clinca San Maguel</Carousel.Item>
+            <Carousel.Item>Sckivar</Carousel.Item>
+            <Carousel.Item>AgriFM</Carousel.Item>
+            <Carousel.Item>Innox</Carousel.Item>
+            <Carousel.Item>Six Strings Record</Carousel.Item>
+            <Carousel.Item>Jazz</Carousel.Item>
+            <Carousel.Item>Eden</Carousel.Item>
+            <Carousel.Item>Gym Armour</Carousel.Item>
+            <Carousel.Item>PrimeFit</Carousel.Item>
           </Carousel>
         </PageWidth>
 

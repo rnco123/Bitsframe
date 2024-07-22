@@ -13,28 +13,14 @@ export default function RunningSlogan() {
     >
       <RunningText>
         <Text m={0} stroke={1.5} style={{ fontWeight: 800 }} font={'9vw'}>
-          High
+          Breakthrough
         </Text>
         <Text m={0} style={{ fontWeight: 800 }} font={'9vw'}>
-          Class
+          Tech
         </Text>
-        <Text m={0} style={{ fontWeight: 800 }} font={'9vw'}>
-          UI
-        </Text>
+
         <Text m={0} stroke={1.5} style={{ fontWeight: 800 }} font={'9vw'}>
-          Components
-        </Text>
-        <Text m={0} style={{ fontWeight: 800 }} font={'9vw'}>
-          From
-        </Text>
-        <Text m={0} stroke={1.5} style={{ fontWeight: 800 }} font={'9vw'}>
-          Open
-        </Text>
-        <Text m={0} stroke={1.5} style={{ fontWeight: 800 }} font={'9vw'}>
-          Source
-        </Text>
-        <Text m={0} style={{ fontWeight: 800 }} font={'9vw'}>
-          Community
+          Excellence
         </Text>
       </RunningText>
     </motion.div>

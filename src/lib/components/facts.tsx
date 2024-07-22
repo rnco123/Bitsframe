@@ -83,18 +83,18 @@ export default function Facts() {
             Our facts
           </Hero.Tag>
           <Text m={0} mt={'12px'} h4 font={'clamp(24px, 3.1vw, 48px)'} style={{ fontWeight: '700', lineHeight: '1.2' }}>
-            We take pride in elegantly solving complex problems and releasing outstanding products for free to the market.
+            At Bitsframe, we take pride in elegantly solving complex challenges and providing innovative tech solutions to businesses.
           </Text>
         </div>
         <Grid.Container gap={5} justify="center">
           <Grid xs={24} md={8} justify="center">
-            <FactItem title="Components" amount={72} />
+            <FactItem title="Projects | Products" amount={50} />
           </Grid>
           <Grid xs={24} md={8} justify="center">
-            <FactItem title="Contributors" amount={repoStatistics?.contributorsCount} />
+            <FactItem title="Partners" amount={22} />
           </Grid>
           <Grid xs={24} md={8} justify="center">
-            <FactItem title="Forks" amount={repoStatistics?.forksCount} />
+            <FactItem title="Years in business" amount={8} />
           </Grid>
         </Grid.Container>
 

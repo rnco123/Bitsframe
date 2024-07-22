@@ -1,19 +1,17 @@
 'use client';
 
 import { Link, Text } from 'components';
-import NextLink from 'next/link';
 import React from 'react';
 
 export type HomeCellProps = {
-  url: string;
   title: string;
   desc: string;
   icon: React.ReactNode;
 };
 
-const HomeCell: React.FC<HomeCellProps> = ({ url, title, desc, icon }) => {
+const HomeCell: React.FC<HomeCellProps> = ({ title, desc, icon }) => {
   return (
-    <NextLink href={url} passHref legacyBehavior>
+    <div>
       <Link style={{ width: '100%', height: '100%' }}>
         <div className="feature shine-effect">
           <div className="feature__icon">{icon}</div>
@@ -53,7 +51,7 @@ const HomeCell: React.FC<HomeCellProps> = ({ url, title, desc, icon }) => {
           }
         `}</style>
       </Link>
-    </NextLink>
+    </div>
   );
 };
 

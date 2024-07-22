@@ -29,7 +29,7 @@ const TilteInjector = () => {
       : 'Discover Himalaya UI, an exceptional open-source UI library for Next.js, offering a wide range of powerful features and seamless integration possibilities.';
   }, [activeRecord]);
 
-  const capitalizeTitleGenerated = capitalizeTitle ? `${capitalizeTitle} — Himalaya UI` : `Himalaya UI — An Open Source Next.js UI Library`;
+  const capitalizeTitleGenerated = capitalizeTitle ? `${capitalizeTitle} — Bitsframe` : `Bitsframe — A Saas for Cutting Edge Web Development`;
 
   const domain = process.env.SITE_URL || 'https://himalaya-ui.com';
   const fullPath = `${domain}${pathName}`;

@@ -33,6 +33,7 @@ import { usePathname } from 'next/navigation';
 import React, { Suspense } from 'react';
 import { Seeds } from '../data';
 import metaData from '../data/metadata.json';
+import Image from 'next/image';
 export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
   const pathName = usePathname();
   const seperated = pathName && pathName.length > 0 ? pathName.split('/') : [];
@@ -73,46 +74,15 @@ export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
   const isHome = pathName === '' || pathName === '/';
   const header = (
     <Header>
-      <Header.Left>
-        <BackButton url="/" hideOn={{ xs: isHome, sm: isHome, md: true, xl: true, lg: true }}></BackButton>
-        <Title hideOn={{ xs: isHome, sm: isHome, md: true, xl: true, lg: true }}>{activeRecord?.name}</Title>
-
+      <Header.Center>
         <Box hideOn={!isHome} showOn={{ md: isHome ? false : 'up' }}>
           <NextLink passHref legacyBehavior href={'/'}>
-            <a className="logo">
-              <BrandLogo size={40}></BrandLogo>
-            </a>
-          </NextLink>
-          <NextLink passHref legacyBehavior href={'/'}>
             <a className="brand">
-              <BrandTitle size={18}></BrandTitle>
+              <Image src="/images/bitsframe-logo.png" width={150} height={50} alt="bitsframe logo" />
             </a>
           </NextLink>
         </Box>
-      </Header.Left>
-      <Header.Center>
-        <Navigation hideOn={{ xs: true, sm: true }}>
-          <NextLink passHref legacyBehavior href={'/'}>
-            <Navigation.Item title={'Home'} active={pathName == '/' || pathName == ''}></Navigation.Item>
-          </NextLink>
-          {metaData.map((df, index) => (
-            <NextLink passHref key={index} legacyBehavior href={df.url}>
-              <Navigation.Item active={!df.children || df.children.length <= 0 ? pathName == df.url : pathName.startsWith(df.url)} title={capitalize(df.name)}>
-                {df.children.map((child, childIndex) => (
-                  <NextLink passHref key={childIndex} legacyBehavior href={child.children[0].url || df.url}>
-                    <Navigation.Item.Child p={2} title={capitalize(child.name)}></Navigation.Item.Child>
-                  </NextLink>
-                ))}
-              </Navigation.Item>
-            </NextLink>
-          ))}
-        </Navigation>
       </Header.Center>
-      <Header.Right>
-        <SearchButton hideOn={{ xs: true, sm: true }} title="Command + K to Search" />
-        <ThemeSwitcher />
-        <MobileMenuButton type="dark" hideOn={{ md: true, lg: true, xl: true }}></MobileMenuButton>
-      </Header.Right>
     </Header>
   );
 

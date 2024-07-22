@@ -73,11 +73,11 @@ export default function Portfolio() {
             Projects
           </Hero.Tag>
           <Text m={0} mt={'12px'} h4 font={'clamp(24px, 3.1vw, 48px)'} style={{ fontWeight: '700', lineHeight: '1.2' }}>
-            Diverse, dynamic, and innovative: Explore real projects made with Himalaya.
+            Versatile, cutting-edge, and impactful: Discover real-world solutions created with Bitsframe.
           </Text>
           <Text m={0} mt={'24px'} font={'clamp(14px, 1.2vw, 16px)'} style={{ color: `var(--color-background-300)`, fontWeight: 400 }}>
-            Our UI library stands out with over 3 fully functional demo projects, offering real-world application scenarios, and a rich repository of 100+
-            examples showcasing its extensive capabilities for diverse design and development needs.
+            Our tech solutions include a range of comprehensive demo projects, showcasing real-world applications and a rich library of examples, highlighting
+            our extensive capabilities for diverse design and development needs.
           </Text>
         </div>
       </motion.div>

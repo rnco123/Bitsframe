@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function findInArray<T, ArgsType extends any[]>(
   arr: T[],
   callback: (element: T, index: number, array: T[]) => boolean,

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Checkbox from '../checkbox';
 import Text from '../text';
 import useClasses from '../use-classes';

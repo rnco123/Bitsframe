@@ -5,7 +5,7 @@ import GitHubIcon from 'components/icons/github';
 import PackageIcon from 'components/icons/package';
 import { motion } from 'framer-motion';
 
-import { Button, Grid, Hero, PageWidth, Text } from 'components';
+import { Grid, Hero, PageWidth, Text } from 'components';
 import { HomeCell } from '.';
 export default function Services() {
   return (

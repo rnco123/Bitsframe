@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import Link from '../link';
 import { Props as LinkBasicProps } from '../link/link';

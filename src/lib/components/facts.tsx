@@ -50,7 +50,7 @@ export function FactItem({ amount = 0, title = '' }: { amount?: number; title: s
 export default function Facts() {
   const ref = useRef<HTMLDivElement>(null);
 
-  const [repoStatistics, setRepoStatistics] = useState<Record<string, number>>({});
+  const [, setRepoStatistics] = useState<Record<string, number>>({});
 
   useEffect(() => {
     const fetchGithubData = async () => {

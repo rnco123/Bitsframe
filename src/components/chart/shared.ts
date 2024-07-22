@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import moment from 'moment';
 import { LineType } from '../use-charts';
 import { ISeriesApi } from '../use-charts/api/iseries-api';

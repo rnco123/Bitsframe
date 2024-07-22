@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { forOwn } from '../forOwn/forOwn';
 import { isObject } from '../isObject/isObject';
 

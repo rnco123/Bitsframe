@@ -4,9 +4,7 @@ import {
   Box,
   Header,
   MobileMenu,
-  MobileMenuButton,
   MobileMenuProvider,
-  Navigation,
   PageLayoutProvider,
   QuickAction,
   QuickBar,
@@ -14,19 +12,15 @@ import {
   SearchProvider,
   Sidebar,
   PageLayout,
-  ThemeSwitcher,
 } from 'components';
 import Divider from 'components/divider';
-import BackButton from 'components/header/back-button';
-import Title from 'components/header/title';
 import Anchor from 'components/icons/anchor';
 import Code from 'components/icons/code';
 import Github from 'components/icons/github';
 import Home from 'components/icons/home';
 import Layout from 'components/icons/layout';
-import Search, { SearchButton, SearchResult, SearchResults } from 'components/search';
+import Search, { SearchResult, SearchResults } from 'components/search';
 import { capitalize } from 'components/utils/collections';
-import { BrandLogo, BrandTitle } from 'lib/components/icons';
 import _ from 'lodash';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';

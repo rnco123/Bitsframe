@@ -1,12 +1,8 @@
 'use client';
 
-import { Footer, FooterNavigation, Hero, Link, Section, Text, useConfig } from 'components';
-import { capitalize } from 'components/utils/collections';
+import { Footer, Hero, Section, Text, useConfig } from 'components';
 import { motion } from 'framer-motion';
 import { Facts, Partners, Portfolio, RunningSlogan, Services } from 'lib/components';
-import { BrandLogo } from 'lib/components/icons';
-import NextLink from 'next/link';
-import metaData from '../lib/data/metadata.json';
 import Image from 'next/image';
 
 export default function Index() {

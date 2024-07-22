@@ -2,7 +2,6 @@
 import { PageWidth, Text } from 'components';
 import Carousel from 'components/carousel';
 import { motion } from 'framer-motion';
-import { RedNinjas, Striked } from './icons';
 
 export default function Partners() {
   return (

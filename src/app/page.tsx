@@ -63,7 +63,6 @@ export default function Index() {
         .logo-footer {
           color: var(--color-foreground-1000);
         }
-
         section {
           display: flex;
           flex-direction: column;

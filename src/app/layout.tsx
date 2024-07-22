@@ -15,7 +15,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <TilteInjector />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/images/bitsframe-small-logo.png"
+          style={{
+            width: '10px',
+            height: '15px',
+          }}
+        />
         <meta name="robots" content="index,follow" />
       </head>
       <body className="scroll">

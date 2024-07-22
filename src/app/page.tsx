@@ -47,10 +47,10 @@ export default function Index() {
           </div>
         </Footer.Bottom.Block>
         <Footer.Bottom.Block>
-          <div>Email: raheel@bitsframe.com</div>
+          <div>Email: hey@bitsframe.com</div>
         </Footer.Bottom.Block>
         <Footer.Bottom.Block>
-          <div>Phone: +92 343 8211185</div>
+          <div>Phone: +92 309 2074390</div>
         </Footer.Bottom.Block>
         <Footer.Bottom.Block justify="flex-end">
           <Text span font={'12px'} style={{ color: 'var(--color-foreground-700)' }}>

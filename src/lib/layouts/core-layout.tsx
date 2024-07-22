@@ -10,15 +10,11 @@ import {
   QuickBar,
   RoutingIndicator,
   SearchProvider,
-  Sidebar,
+  // Sidebar,
   PageLayout,
 } from 'components';
 import Divider from 'components/divider';
-import Anchor from 'components/icons/anchor';
-import Code from 'components/icons/code';
-import Github from 'components/icons/github';
 import Home from 'components/icons/home';
-import Layout from 'components/icons/layout';
 import Search, { SearchResult, SearchResults } from 'components/search';
 import { capitalize } from 'components/utils/collections';
 import _ from 'lodash';
@@ -33,7 +29,7 @@ export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
   const seperated = pathName && pathName.length > 0 ? pathName.split('/') : [];
   const firstElement = seperated.length > 1 ? seperated[1] : '/';
   const currentSeeds = Seeds.filter(df => df.url?.startsWith('/' + firstElement + '/'));
-  const activeRecord = _.findLast(Seeds, df => df.url === pathName);
+  // const activeRecord = _.findLast(Seeds, df => df.url === pathName);
   const groups = _.chain(currentSeeds)
     .groupBy('group')
     .map((value, key) => ({ title: key, children: value }))
@@ -80,19 +76,19 @@ export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
     </Header>
   );
 
-  const sidebar = (
-    <Sidebar>
-      {groups.map((item, index) => (
-        <Sidebar.Group isActive={activeRecord ? activeRecord.group == item.title : false} key={index} title={item.title}>
-          {item.children.map((subChild, subIndex) => (
-            <NextLink href={subChild.url ?? ''} key={subIndex} passHref legacyBehavior>
-              <Sidebar.Item isActive={subChild.url === pathName}>{subChild.name}</Sidebar.Item>
-            </NextLink>
-          ))}
-        </Sidebar.Group>
-      ))}
-    </Sidebar>
-  );
+  // const sidebar = (
+  //   <Sidebar>
+  //     {groups.map((item, index) => (
+  //       <Sidebar.Group isActive={activeRecord ? activeRecord.group == item.title : false} key={index} title={item.title}>
+  //         {item.children.map((subChild, subIndex) => (
+  //           <NextLink href={subChild.url ?? ''} key={subIndex} passHref legacyBehavior>
+  //             <Sidebar.Item isActive={subChild.url === pathName}>{subChild.name}</Sidebar.Item>
+  //           </NextLink>
+  //         ))}
+  //       </Sidebar.Group>
+  //     ))}
+  //   </Sidebar>
+  // );
 
   const quickBar = (
     <QuickBar>
@@ -102,27 +98,6 @@ export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
         </QuickAction>
       </NextLink>
       <Divider w={'100%'}></Divider>
-      <NextLink href="/guide" passHref legacyBehavior>
-        <QuickAction active={pathName.startsWith('/guide')} tooltip="Guide">
-          <Code size={20} />
-        </QuickAction>
-      </NextLink>
-      <NextLink href="/components" passHref legacyBehavior>
-        <QuickAction active={pathName.startsWith('/components')} tooltip="Components">
-          <Layout size={20} />
-        </QuickAction>
-      </NextLink>
-      <NextLink href="/hooks" passHref legacyBehavior>
-        <QuickAction active={pathName.startsWith('/hooks')} tooltip="Hooks">
-          <Anchor size={20} />
-        </QuickAction>
-      </NextLink>
-      <Divider w={'100%'}></Divider>
-      <NextLink href="https://github.com/red-ninjas/himalaya-ui" passHref legacyBehavior>
-        <QuickAction target="_blank" tooltip="On Github">
-          <Github size={20} />
-        </QuickAction>
-      </NextLink>
     </QuickBar>
   );
 
@@ -161,7 +136,7 @@ export const CoreLayout = ({ children }: { children: React.ReactNode }) => {
             <Search searchFunction={doSearch} placeholder="Search in documentation." />
             <PageLayoutProvider>
               <PageLayout
-                sidebarContent={!isHome ? sidebar : undefined}
+                // sidebarContent={!isHome ? sidebar : undefined}
                 headerContent={header}
                 withPageMargin={!isHome}
                 maximalContentWidth={isHome ? '100%' : undefined}

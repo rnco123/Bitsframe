@@ -2,7 +2,7 @@
 
 import { Footer, Hero, Section, Text, useConfig } from 'components';
 import { motion } from 'framer-motion';
-import { Facts, Partners, Portfolio, RunningSlogan, Services } from 'lib/components';
+import { Facts, Partners, RunningSlogan, Services } from 'lib/components';
 import Image from 'next/image';
 
 export default function Index() {
@@ -11,9 +11,7 @@ export default function Index() {
     <>
       <Hero scrollToId="services" style={{ background: theme.type == 'dark' ? '#090909' : '#ffffff' }}>
         <Hero.Tag>BITSFRAME</Hero.Tag>
-        <Hero.Title>
-          Scaling Heights of Design Excellence: Your UI Journey <span style={{ textDecoration: 'underline', fontWeight: 300 }}>Begins Here!</span>
-        </Hero.Title>
+        <Hero.Title>Empowering Your Tech Vision: Innovative Solutions for Tomorrow</Hero.Title>
         <Hero.Desc>Explore our tailored services and solutions designed to drive success in your tech projects and products.</Hero.Desc>
       </Hero>
 
@@ -32,9 +30,9 @@ export default function Index() {
         <Partners></Partners>
       </motion.div>
 
-      <Section>
+      {/* <Section>
         <Portfolio></Portfolio>
-      </Section>
+      </Section> */}
 
       <Section>
         <Facts></Facts>
@@ -47,6 +45,12 @@ export default function Index() {
           <div className="logo-footer">
             <Image src="/images/bitsframe-small-logo.png" width={30} height={40} alt="logo"></Image>
           </div>
+        </Footer.Bottom.Block>
+        <Footer.Bottom.Block>
+          <div>Email: raheel@bitsframe.com</div>
+        </Footer.Bottom.Block>
+        <Footer.Bottom.Block>
+          <div>Phone: +92 343 8211185</div>
         </Footer.Bottom.Block>
         <Footer.Bottom.Block justify="flex-end">
           <Text span font={'12px'} style={{ color: 'var(--color-foreground-700)' }}>

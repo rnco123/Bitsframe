@@ -1,12 +1,12 @@
 'use client';
 import Activity from 'components/icons/activity';
 import FeatherIcon from 'components/icons/feather';
-import GitHubIcon from 'components/icons/github';
 import PackageIcon from 'components/icons/package';
 import { motion } from 'framer-motion';
 
 import { Grid, Hero, PageWidth, Text } from 'components';
 import { HomeCell } from '.';
+import SnippetIcon from 'components/snippet/snippet-icon';
 export default function Services() {
   return (
     <PageWidth>
@@ -35,7 +35,7 @@ export default function Services() {
             <HomeCell icon={<FeatherIcon />} title="Advanced Tech" desc="Cutting-edge technology for innovative and effective solutions." />
           </Grid>
           <Grid xs={24} md={6}>
-            <HomeCell icon={<GitHubIcon />} title="Flexible Management" desc="Adaptive project management for timely and efficient results." />
+            <HomeCell icon={<SnippetIcon />} title="Flexible Management" desc="Adaptive project management for timely and efficient results." />
           </Grid>
           <Grid xs={24} md={6}>
             <HomeCell icon={<Activity />} title="Expert Team" desc=" Skilled professionals with deep industry knowledge and expertise" />
